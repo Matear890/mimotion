@@ -147,9 +147,9 @@ if __name__ ==  "__main__":
     if str(sckey) == '0':
         sckey = ''
     # 用户名（格式为 13800138000）
-    user = input()
+    user = input(15618957027)
     # 登录密码
-    passwd = input()
+    passwd = input(hh74108520)
     # 要修改的步数，直接输入想要修改的步数值，留空为随机步数
     step = input()
     setp_array = step.split('-')
