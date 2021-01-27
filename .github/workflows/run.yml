@@ -15,13 +15,7 @@ jobs:
 
     steps:
       
-    # 检出
-    - name: Checkout
-      uses: actions/checkout@v2
-      
-    # 设置服务器时区为东八区 
-    - name: Set time zone
-      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+
       
     - uses: actions/checkout@v2
     - name: 初始化Python
