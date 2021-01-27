@@ -13,8 +13,16 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
 
-    steps:
       
+    steps:
+    
+    # 检出
+    - name: Checkout
+      uses: actions/checkout@v2
+      
+    # 设置服务器时区为东八区 
+    - name: Set time zone
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
 
       
     - uses: actions/checkout@v2
