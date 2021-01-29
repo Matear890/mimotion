@@ -6,16 +6,14 @@ on:
   pull_request:
     branches: [ master ]
   schedule:
-    - cron: 50 11 * * *
+    - cron: 50 10 * * *
 
 jobs:
   build:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
 
-      
     steps:
-      
     - uses: actions/checkout@v2
     - name: 初始化Python
       uses: actions/setup-python@v2
